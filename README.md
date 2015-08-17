@@ -8,3 +8,16 @@ It seems that the original developer's website has gone offline:
 http://cinemasquid.com/
 
 This repository hosts the latest source code from there.  Additional features or bug fixes may (or may not) be authored here.
+
+
+
+Building using Mono on Linux
+----------------------------
+
+Mono version 3.2.8 (which is shipped at least as of Ubuntu 15.04) is not new enough.  You'll need to get an updated version:
+
+http://www.mono-project.com/docs/getting-started/install/linux
+
+Then you can build the project as follows:
+
+> cd BDInfo && xbuild /p:Configuration=Release BDInfo.csproj
