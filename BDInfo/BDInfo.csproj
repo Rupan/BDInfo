@@ -191,7 +191,7 @@
     <Compile Include="FormChart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormChart.designer.cs">
+    <Compile Include="FormChart.Designer.cs">
       <DependentUpon>FormChart.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
