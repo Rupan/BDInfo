@@ -9,6 +9,9 @@ http://cinemasquid.com/
 
 This repository hosts the latest source code from there.  Additional features or bug fixes may (or may not) be authored here.
 
+The application icon is part of the "Build Icons by Umar123" and is licensed as CC Attribution-Share Alike 4.0:
+
+http://www.iconarchive.com/show/build-icons-by-umar123.html
 
 
 Building using Mono on Linux
