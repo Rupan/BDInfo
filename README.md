@@ -21,6 +21,13 @@ Mono version 3.2.8 (which is shipped at least as of Ubuntu 15.04) is not new eno
 
 http://www.mono-project.com/docs/getting-started/install/linux
 
+If you're building on Ubuntu 16.04, the packaged version of Mono (4.2.1) is new enough to build this.  You'll need the
+following packages installed build and run:
+
+* mono-runtime
+* libmono-system-windows-forms4.0-cil
+* mono-xbuild (only at build time)
+
 Then you can build the project as follows:
 
 > cd BDInfo && xbuild /p:Configuration=Release BDInfo.csproj
