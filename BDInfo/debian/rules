@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+build:
+	dh_testdir
+	rm -f build-stamp
+	xbuild /p:Configuration=Release BDInfo.csproj
+	touch build-stamp
+
+install: build
+	dh_testdir
+	dh_clean -k
+	dh_installdirs
+	cp -a bin/Release/BDInfo.exe $(CURDIR)/debian/usr/bin
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	rm -rf bin obj
+	dh_clean

@@ -1,0 +1,14 @@
+Source: bdinfo
+Section: LGPL-2.1+
+Priority: optional
+Maintainer: Michael Mohr <akihana@gmail.com>
+Build-Depends: debhelper (>=9), mono-runtime, libmono-system-windows-forms4.0-cil, mono-xbuild, cli-common-dev
+Standards-Version: 3.9.6
+Homepage: <http://www.cinemasquid.com/blu-ray/tools/bdinfo>
+Vcs-Git: https://github.com/Rupan/BDInfo.git
+Vcs-Browser: https://github.com/Rupan/BDInfo
+
+Package: bdinfo
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, mono-runtime, libmono-system-windows-forms4.0-cil
+Description: A program to display Blu-ray disc media info.
