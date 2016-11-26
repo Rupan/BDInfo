@@ -1,0 +1,5 @@
+bdinfo (0.5.8-1) unstable; urgency=medium
+
+  * Initial packaging for Debian.
+
+ -- Michael Mohr <akihana@gmail.com>  Sat, 30 Jul 2016 23:54:25 -0700
