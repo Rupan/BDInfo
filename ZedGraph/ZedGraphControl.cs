@@ -517,7 +517,7 @@ namespace ZedGraph
 			SetStyle( ControlStyles.SupportsTransparentBackColor, true );
 			//this.BackColor = Color.Transparent;
 
-			_resourceManager = new ResourceManager( "ZedGraph.ZedGraph.ZedGraphLocale",
+			_resourceManager = new ResourceManager( "ZedGraph.ZedGraphLocale",
 				Assembly.GetExecutingAssembly() );
 
 			Rectangle rect = new Rectangle( 0, 0, this.Size.Width, this.Size.Height );
