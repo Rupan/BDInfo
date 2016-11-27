@@ -1,20 +1,16 @@
 #!/usr/bin/make -f
 
-build:
-	dh_testdir
-	rm -f build-stamp
-	xbuild /p:Configuration=Release BDInfo.csproj
-	touch build-stamp
+%:
+	dh $@
 
-install: build
-	dh_testdir
-	dh_clean -k
-	dh_installdirs
-	cp -a bin/Release/BDInfo.exe $(CURDIR)/debian/usr/bin
+override_dh_auto_build:
+	xbuild /tv:4.0 /target:build /p:Configuration=Release BDInfo.sln
+	dh_auto_build
 
-clean:
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp
-	rm -rf bin obj
+override_dh_auto_install:
+	dh_install BDInfo/bin/Release/BDInfo.exe /usr/bin
+	dh_auto_install
+
+override_dh_clean:
+	xbuild /tv:4.0 /target:clean /p:Configuration=Release BDInfo.sln
 	dh_clean
