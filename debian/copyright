@@ -2,7 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: bdinfo
 Source: <https://github.com/Rupan/BDInfo>
 
-Files: *
+Files: BDInfo/*
 Copyright: 2011 Cinema Squid
            2015-2016 Michael Mohr <akihana@gmail.com>
 License: LGPL-2.1+
@@ -21,7 +21,7 @@ License: LGPL-2.1+
  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 Files: ZedGraph/*
-Copyright: 2004 John Champion
+Copyright: 2003-2007 John Champion
 License: LGPL-2.1+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Lesser General Public

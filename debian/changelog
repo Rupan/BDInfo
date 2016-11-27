@@ -1,3 +1,13 @@
+bdinfo (0.5.9-1) unstable; urgency=medium
+
+  * Update target framework version to v4.5
+  * Refactor how ZedGraph is included by the main program
+  * Update Zedgraph to version 5.1.5 (final release)
+  * Minor bug fixes, code cleanups in BDInfo application code
+  * Normalize file encodings and UTF-8 BOM markers
+
+ -- Michael Mohr <akihana@gmail.com>  Sun, 27 Nov 2016 02:15:07 -0800
+
 bdinfo (0.5.8-1) unstable; urgency=medium
 
   * Initial packaging for Debian.
