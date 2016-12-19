@@ -9,6 +9,7 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	dh_install BDInfo/bin/Release/BDInfo.exe /usr/bin
+	gacutil -i ZedGraph/bin/Release/ZedGraph.dll -root ${PWD}/debian/bdinfo/usr/lib
 	dh_auto_install
 
 override_dh_clean:
