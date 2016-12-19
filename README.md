@@ -30,4 +30,8 @@ following packages installed build and run:
 
 Then you can build the project as follows:
 
-> cd BDInfo && xbuild /p:Configuration=Release BDInfo.csproj
+> xbuild /p:Configuration=Release BDInfo.sln
+
+Cleaning up after a build:
+
+> xbuild /p:Configuration=Release /t:Clean BDInfo.sln
